@@ -1,14 +1,14 @@
+# 👋 Hola, soy Pablo Herrera
+### 🚀 Profesional de Tecnología con enfoque en QA Automation y Desarrollo de Software
 
+Soy un profesional apasionado por la tecnología con más de 10 años de experiencia en la industria. Mi trayectoria combina un sólido background en Desarrollo de Software y una especialización profunda en Control de Calidad y Automatización (QA Automation).
+
+Mi objetivo es claro: ayudar a los equipos de software a alcanzar la excelencia, garantizando productos de alta calidad, escalables y confiables.
 <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 20px;">
   <img src="img/pabloherrera.png" alt="Foto de Perfil de Pablo Herrera" style="width: 150px; height: auto; border-radius: 10%; object-fit: cover;">
   <div>
-    Hola, soy Pablo Herrera
+   
     
-    🚀 Profesional de Tecnología con enfoque en QA Automation y Desarrollo de Software
-
-    Soy un profesional apasionado por la tecnología con más de 10 años de experiencia en la industria. Mi trayectoria combina un sólido background en Desarrollo de Software y una especialización profunda en Control de Calidad y Automatización (QA Automation).
-
-    Mi objetivo es claro: ayudar a los equipos de software a alcanzar la excelencia, garantizando productos de alta calidad, escalables y confiables.
   </div>
 </div>
 
