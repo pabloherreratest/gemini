@@ -1,5 +1,3 @@
-# 👋 Hola, soy Pablo Herrera
-### 🚀 Profesional de Tecnología con enfoque en QA Automation y Desarrollo de Software
 
 <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 20px;">
   <img src="img/pabloherrera.png" alt="Foto de Perfil de Pablo Herrera" style="width: 150px; height: auto; border-radius: 10%; object-fit: cover;">
