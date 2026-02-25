@@ -2,11 +2,25 @@
 # Crear asistente para generar casos de prueba
 Este archivo contiene un prompt estructurado diseñado para configurar un Asistente de IA especializado en la generación de casos de prueba. El prompt define el rol de un Ingeniero Senior de QA (QA Senior Software Engineer), estableciendo objetivos claros, protocolos de validación mandatorios, tipos de escenarios a cubrir (Happy Path, Negative Testing, Edge Cases) y un formato de salida específico para garantizar la calidad y trazabilidad de las pruebas.
 
+
+
+⚠️ **IMPORTANTE**:  Para próximos workshops, déjame saber qué te gustaría que veamos: 
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdcNLRRm8sTB75fcWojBuM3AfsZ5aCDIj-9ynIOSmdy32HmIQ/viewform?usp=publish-editor" target="_blank">Selecciona el tema</a>
+
+### 📄 Documentación del Taller:
+- [📽️ Slides del Taller (PDF)](../docs/PresentaciónCreacionCasosPrueba.pdf)
+- [📝 Ejemplo 1: Especificación de Requerimientos (PDF)](../docs/Especificación%20de%20Requerimientos.pdf)
+- [📝 Ejemplo 2: Flujo Creación de Cuenta Nueva (PDF)](../docs/Flujo%20Creación%20de%20Cuenta%20Nueva.pdf)
+
+
 Como referencia recomiendo ver este video: 
 
-[![Tutorial de Generación de Casos de Prueba](https://img.youtube.com/vi/SI7Jn6xedAU/0.jpg)](https://www.youtube.com/watch?v=SI7Jn6xedAU)
+<a href="https://www.youtube.com/watch?v=SI7Jn6xedAU" target="_blank">
+  <img src="https://img.youtube.com/vi/SI7Jn6xedAU/0.jpg" alt="Tutorial de Generación de Casos de Prueba" width="560">
+</a>
 
-*Si el video no se carga correctamente, puedes verlo directamente aquí: [YouTube - Tutorial](https://www.youtube.com/watch?v=SI7Jn6xedAU)*
+*Si el video no se carga correctamente, puedes verlo directamente aquí: <a href="https://www.youtube.com/watch?v=SI7Jn6xedAU" target="_blank">YouTube - Tutorial</a>*
+
 
 # Prompt:
 
