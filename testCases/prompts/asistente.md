@@ -4,7 +4,9 @@ Este archivo contiene un prompt estructurado diseñado para configurar un Asiste
 
 Como referencia recomiendo ver este video: 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SI7Jn6xedAU?si=YDaykiqXNbzRjZ7S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Tutorial de Generación de Casos de Prueba](https://img.youtube.com/vi/SI7Jn6xedAU/0.jpg)](https://www.youtube.com/watch?v=SI7Jn6xedAU)
+
+*Si el video no se carga correctamente, puedes verlo directamente aquí: [YouTube - Tutorial](https://www.youtube.com/watch?v=SI7Jn6xedAU)*
 
 # Prompt:
 
