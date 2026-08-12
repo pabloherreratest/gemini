@@ -6,6 +6,25 @@ Este recurso está diseñado para acompañarte durante la sesión en vivo y serv
 
 ---
 
+## 📌 Tabla de Contenidos
+
+- [👨‍💻 Acerca de Pablo Herrera](#-acerca-de-pablo-herrera)
+- [🎯 Objetivos del Workshop](#-objetivos-del-workshop)
+- [⚖️ SDD vs. Vibe Coding](#️-sdd-vs-vibe-coding)
+- [🛠️ Stack Tecnológico](#️-stack-tecnológico)
+- [💻 Requisitos Previos (Para los Asistentes)](#-requisitos-previos-para-los-asistentes)
+- [🚀 Paso a Paso del Workshop](#-paso-a-paso-del-workshop)
+  - [1. La Petición Informal (Raw Request)](#1-la-petición-informal-raw-request)
+  - [2. Definición de Especificaciones (`spec/`)](#2-definición-de-especificaciones-spec)
+  - [3. Estrategia TDD & Prompts para la IA](#3-estrategia-tdd--prompts-para-la-ia)
+  - [4. Pruebas E2E con Playwright](#4-pruebas-e2e-con-playwright)
+- [🧪 Ejecución de Pruebas](#-ejecución-de-pruebas)
+- [⏱️ Agenda / Timeline (60 min)](#️-agenda--timeline-60-min)
+- [💡 Preguntas Frecuentes y Buenas Prácticas](#-preguntas-frecuentes-y-buenas-prácticas)
+- [📚 Qué puedo aprender a continuación](#-qué-puedo-aprender-a-continuación)
+
+---
+
 ## 👨‍💻 Acerca de Pablo Herrera
 
 <table>
@@ -50,25 +69,6 @@ Este recurso está diseñado para acompañarte durante la sesión en vivo y serv
     </td>
   </tr>
 </table>
-
----
-
-## 📌 Tabla de Contenidos
-
-- [👨‍💻 Acerca de Pablo Herrera](#-acerca-de-pablo-herrera)
-- [🎯 Objetivos del Workshop](#-objetivos-del-workshop)
-- [⚖️ SDD vs. Vibe Coding](#️-sdd-vs-vibe-coding)
-- [🛠️ Stack Tecnológico](#️-stack-tecnológico)
-- [💻 Requisitos Previos (Para los Asistentes)](#-requisitos-previos-para-los-asistentes)
-- [🚀 Paso a Paso del Workshop](#-paso-a-paso-del-workshop)
-  - [1. La Petición Informal (Raw Request)](#1-la-petición-informal-raw-request)
-  - [2. Definición de Especificaciones (`spec/`)](#2-definición-de-especificaciones-spec)
-  - [3. Estrategia TDD & Prompts para la IA](#3-estrategia-tdd--prompts-para-la-ia)
-  - [4. Pruebas E2E con Playwright](#4-pruebas-e2e-con-playwright)
-- [🧪 Ejecución de Pruebas](#-ejecución-de-pruebas)
-- [⏱️ Agenda / Timeline (60 min)](#️-agenda--timeline-60-min)
-- [💡 Preguntas Frecuentes y Buenas Prácticas](#-preguntas-frecuentes-y-buenas-prácticas)
-- [📚 Qué puedo aprender a continuación](#-qué-puedo-aprender-a-continuación)
 
 ---
 
