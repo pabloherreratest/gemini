@@ -11,7 +11,7 @@ Este recurso está diseñado para acompañarte durante la sesión en vivo y serv
 <table>
   <tr>
     <td width="25%" align="center" valign="top">
-      <img src="img/pabloherrera.png" alt="Pablo Herrera" width="160" style="border-radius: 50%; max-width: 100%;"/><br/><br/>
+      <img src="../img/pabloherrera.png" alt="Pablo Herrera" width="160" style="border-radius: 50%; max-width: 100%;"/><br/><br/>
       <b>Redes Sociales:</b><br/>
       🎬 <a href="https://www.youtube.com/@TestingConPabloHerrera" target="_blank">YouTube</a><br/>
       💼 <a href="https://ec.linkedin.com/in/pablo-herrera-ec" target="_blank">LinkedIn</a>
