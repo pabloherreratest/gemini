@@ -118,9 +118,23 @@ Si vas a acompañar el workshop realizando los ejercicios en tu equipo local, as
 
 ## 🚀 Paso a Paso del Workshop
 
-### 1. La Petición Informal (Raw Request)
+### 0. La Petición Informal (Raw Request)
 Imagína que recibes la siguiente solicitud verbal o correo informal:
 > *"Necesitamos con urgencia una página web para inscribir alumnos a nuestros 3 cursos. Debe pedir cédula/identidad (máx 10 dígitos), nombre, apellido, país y ciudad (país y ciudad se guardan siempre en MAYÚSCULAS). Debe mostrar la lista abajo en una tabla y necesitamos pruebas unitarias y automatizadas."*
+
+---
+
+### 1. Creación del proyecto 
+
+1. Abrir Antigravity IDE
+2. Abrir una carpeta vacia (donde va a estar el proyecto)
+3. Ejecutar los comandos en este orden:
+
+npm init -y
+npm install express cors
+npm install -D @playwright/test
+npx playwright install chromium
+
 
 ---
 
@@ -309,7 +323,7 @@ node server.js
 1. **¿Por qué usar el Test Runner nativo de Node (`node:test`)?**  
    Para mantener el entorno ultraliviano sin requerir dependencias adicionales como Jest en demos de tiempo limitado.
 2. **¿Qué pasa si cambian las reglas de negocio?**  
-   Simplemente actualizas `spec/requirements.md` y `spec/testing.md`, y le pides a la IA que refactorice código y tests simultáneamente. ¡El contrato sigue mandando!
+   Una alternativa es actualizar `spec/requirements.md` y `spec/testing.md`, y le pides a la IA que refactorice código y tests simultáneamente. ¡El contrato sigue mandando!. Como buena práctica se recomienda especificar los cambios en otro archivo .md de tal manera que conservas el requerimiento original y pides que únicamente se incluya los nuevos cambios, usando como contexto el requerimiento inicial.
 3. **¿Cómo garantizo que la IA no introduzca código no deseado?**  
    Definiendo explícitamente restricciones de arquitectura en la especificación (ej. "Prohibido scripts embebidos en el HTML").
 
