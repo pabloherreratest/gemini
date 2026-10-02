@@ -267,6 +267,8 @@ car-sale-demo/
 - La manipulación del DOM DEBE permanecer en módulos JavaScript.
 - El consumo de la API DEBE estar centralizado en `public/js/api.js`.
 - La lógica de validación y procesamiento de vehículos DEBE permanecer en el backend.
+- El mecanismo de recepción y almacenamiento de la fotografía DEBE estar encapsulado en el backend y ser transparente para el resto de la aplicación.
+- La fotografía asociada a cada vehículo DEBE poder ser servida por la aplicación para su visualización en el catálogo.
 
 ## 3. Separación de Responsabilidades
 
@@ -335,6 +337,8 @@ Devuelve la lista de vehículos disponibles.
 
 Registra un nuevo vehículo.
 
+La petición DEBE permitir enviar los datos del vehículo junto con su fotografía.
+
 La respuesta DEBE indicar claramente si el registro fue exitoso o si existen errores de validación.
 ```
 
@@ -372,7 +376,7 @@ El formulario DEBE solicitar:
 | Kilometraje | Número | Sí | Mayor o igual a 0 |
 | Ciudad | Texto | Sí | Entre 2 y 40 caracteres |
 | Descripción | Texto | Sí | Entre 10 y 500 caracteres |
-| Imagen | URL | No | URL válida si se proporciona |
+| Fotografía | Archivo de imagen | Sí | Debe corresponder al vehículo que se está registrando |
 
 ## 3. Reglas de Negocio
 
@@ -382,8 +386,10 @@ El formulario DEBE solicitar:
 4. `precio` DEBE ser mayor que cero.
 5. `kilometraje` DEBE ser mayor o igual a cero.
 6. La descripción DEBE tener al menos 10 caracteres.
-7. Si se proporciona una imagen, debe tratarse como una URL.
-8. Cada vehículo DEBE recibir un identificador único generado por el backend.
+7. La fotografía del vehículo ES OBLIGATORIA durante el registro.
+8. La fotografía DEBE ser un archivo de imagen.
+9. La fotografía registrada DEBE quedar asociada al vehículo y estar disponible para mostrarse posteriormente en el listado de ventas.
+10. Cada vehículo DEBE recibir un identificador único generado por el backend.
 9. Cada vehículo nuevo DEBE registrarse inicialmente con estado `DISPONIBLE`.
 10. Un vehículo registrado DEBE aparecer en el listado de vehículos disponibles.
 
@@ -400,7 +406,7 @@ Ejemplo:
   "kilometraje": 35000,
   "ciudad": "Quito",
   "descripcion": "Vehículo en excelente estado.",
-  "imagen": "https://example.com/toyota-corolla.jpg",
+  "fotografia": "ruta-o-referencia-de-la-imagen",
   "estado": "DISPONIBLE"
 }
 
@@ -418,7 +424,7 @@ Request:
   "kilometraje": 35000,
   "ciudad": "Quito",
   "descripcion": "Vehículo en excelente estado.",
-  "imagen": "https://example.com/toyota-corolla.jpg"
+  "fotografia": "<archivo-de-imagen>"
 }
 
 ### Respuesta exitosa
@@ -448,10 +454,11 @@ La pantalla DEBE:
 1. Mostrar un título claro.
 2. Mostrar el formulario de registro.
 3. Identificar visualmente los campos obligatorios.
-4. Permitir enviar el formulario.
-5. Mostrar un mensaje de éxito cuando el vehículo sea registrado.
-6. Mostrar mensajes comprensibles cuando existan errores de validación.
-7. Después de un registro exitoso, ofrecer una forma clara de volver al listado de vehículos.
+4. Permitir seleccionar y visualizar una vista previa de la fotografía antes de enviar el formulario.
+5. Permitir enviar el formulario.
+6. Mostrar un mensaje de éxito cuando el vehículo sea registrado.
+7. Mostrar mensajes comprensibles cuando existan errores de validación.
+8. Después de un registro exitoso, ofrecer una forma clara de volver al listado de vehículos.
 
 ## 7. Fuera de Alcance
 
@@ -461,8 +468,8 @@ Esta funcionalidad NO incluye:
 - Registro de usuarios.
 - Edición.
 - Eliminación.
-- Subida de archivos.
-- Galería de fotografías.
+- Galería de fotografías múltiples.
+- Edición avanzada de fotografías.
 - Base de datos.
 - Gestión de vendedores.
 - Gestión de compradores.
@@ -537,7 +544,7 @@ Cada vehículo DEBE visualizarse como una tarjeta.
 
 La tarjeta DEBE mostrar como mínimo:
 
-- Imagen o imagen de reemplazo.
+- Fotografía del vehículo.
 - Marca y modelo.
 - Año.
 - Precio.
@@ -575,7 +582,7 @@ La landing page DEBE:
 Al cargar la página:
 
 1. Se debe solicitar la lista de vehículos mediante `GET /api/autos`.
-2. Se deben renderizar las tarjetas.
+2. Se deben renderizar las tarjetas incluyendo la fotografía asociada a cada vehículo.
 3. Si la API responde con error, se debe mostrar un mensaje comprensible.
 4. El botón "Vender mi auto" debe llevar al formulario de registro.
 5. El botón "Ver vehículos" debe desplazar al usuario hacia la sección del catálogo.
@@ -606,7 +613,7 @@ Cuando exista al menos un vehículo registrado:
 1. El usuario entra a la landing page.
 2. Visualiza la sección "Vehículos disponibles".
 3. Visualiza una tarjeta por cada vehículo disponible.
-4. La tarjeta muestra los datos principales del vehículo.
+4. La tarjeta muestra la fotografía y los datos principales del vehículo.
 5. El usuario puede acceder al formulario mediante "Vender mi auto".
 ```
 
@@ -629,6 +636,7 @@ Verificar:
 - Se crea un identificador.
 - El vehículo queda con estado `DISPONIBLE`.
 - Los datos principales se almacenan correctamente.
+- La fotografía queda asociada al vehículo.
 
 ### Caso 2 — Marca inválida
 
@@ -705,9 +713,11 @@ Flujo:
    - Kilometraje: `35000`
    - Ciudad: `Quito`
    - Descripción: `Vehículo en excelente estado`
-4. Enviar el formulario.
-5. Verificar que aparezca el mensaje de registro exitoso.
-6. Verificar que exista una opción para regresar al listado.
+   - Fotografía: seleccionar un archivo de imagen de prueba.
+4. Verificar que se muestre la vista previa de la fotografía.
+5. Enviar el formulario.
+6. Verificar que aparezca el mensaje de registro exitoso.
+7. Verificar que exista una opción para regresar al listado.
 
 ### `listado-autos.spec.js`
 
@@ -718,13 +728,15 @@ Flujo:
 3. Verificar la sección `Vehículos disponibles`.
 4. Verificar que se carguen los vehículos registrados.
 5. Verificar que una tarjeta contenga:
+   - Fotografía del vehículo.
    - Marca.
    - Modelo.
    - Año.
    - Precio.
    - Kilometraje.
    - Ciudad.
-6. Verificar que el botón `Vender mi auto` dirija a `/registrar.html`.
+6. Verificar que la fotografía visible corresponda al vehículo registrado.
+7. Verificar que el botón `Vender mi auto` dirija a `/registrar.html`.
 
 ---
 
@@ -830,6 +842,8 @@ Debes crear:
 - public/js/app.js
 - public/js/registro.js
 - public/css/styles.css
+
+El formulario de registro DEBE permitir seleccionar una fotografía del vehículo, mostrar una vista previa y enviarla al backend. La fotografía debe quedar asociada al vehículo y posteriormente mostrarse en la landing page.
 
 Utiliza HTML semántico, JavaScript Vanilla y Tailwind CSS mediante CDN.
 
