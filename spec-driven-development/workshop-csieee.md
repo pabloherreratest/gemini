@@ -40,6 +40,34 @@ La demo está deliberadamente acotada: el objetivo no es construir un marketplac
     <td width="75%" valign="top">
       <p>Soy un profesional apasionado por la tecnología con más de 10 años de experiencia en la industria. Mi trayectoria combina un sólido background en Desarrollo de Software y una especialización profunda en Control de Calidad y Automatización (QA Automation).</p>
       <p>Mi objetivo es claro: ayudar a los equipos de software a alcanzar la excelencia, garantizando productos de alta calidad, escalables y confiables.</p>
+      <h3>🛠️ Mis Habilidades Técnicas</h3>
+      <p>Como <b>QA Automation Engineer</b>, poseo experiencia práctica en la creación e implementación de <i>frameworks</i> de automatización robustos, utilizando herramientas y lenguajes líderes en el sector:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Categoría</th>
+            <th>Tecnologías y Herramientas Clave</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Lenguajes de Programación</b></td>
+            <td>Java, Python, JavaScript</td>
+          </tr>
+          <tr>
+            <td><b>Herramientas de QA</b></td>
+            <td>Selenium WebDriver, Playwright, Appium, Cypress, Postman</td>
+          </tr>
+          <tr>
+            <td><b>Metodologías</b></td>
+            <td>Agile (Scrum/Kanban), Testing de Rendimiento, Testing Funcional</td>
+          </tr>
+          <tr>
+            <td><b>Otros</b></td>
+            <td>Git, Integración Continua (CI/CD)</td>
+          </tr>
+        </tbody>
+      </table>
     </td>
   </tr>
 </table>
